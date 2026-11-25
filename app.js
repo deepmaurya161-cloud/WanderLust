@@ -97,8 +97,7 @@ app.use((req,res,next) => {
 // })
 
 app.get("/", (req, res) => {
-    console.log("ROOT ROUTE IS WORKING");
-    res.send("Wanderlust homepage route is working!");
+    res.send("Homepage route is working!");
 });
 
 app.use("/listings",listingRouter);
